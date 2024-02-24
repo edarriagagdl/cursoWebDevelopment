@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 30px 30px;
+  height: 100px;
+  .logo {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+  .listaNav {
+    list-style: none;
+    text-align: right;
+    font-size: 1.3rem;
+    .listaItem {
+      display: inline-block;
+      margin-left: 10px;
+      .linkNav {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+ul {
+  font-size: 1.3rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+strong {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+label {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+article {
+  margin: 30px 30px;
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+main {
+  .imagenFondo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+
+    height: 40vh;
+    text-align: center;
+    color: white;
+  }
+  /* background-color: aqua; */
+  .imagenFondoMainIndex {
+    background-image: url('../assets/img/fotoManoPata.JPG');
+  }
+  .imagenFondoAdopciones {
+    background-image: url('../assets/img/adoptame-letrero.webp');
+  }
+  .imagenFondoAyudar {
+    background-image: url('../assets/img/FotoAyudaAlbergue.jpg');
+  }
+  .imagenFondoHistorias {
+    background-image: url('../assets/img/Adopcion-MAxi.jpg');
+  }
+  .imagenFondoContacto {
+    background-image: url('../assets/img/perro-pata.png');
+  }
+
+  .inicio {
+    margin: 30px 30px;
+  }
+
+  .seccionImgTexto {
+    /* background-color: #199319; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 30px 30px;
+
+    .imgSeccion {
+      width: 30%;
+      height: 40vh;
+      object-fit: cover; /* hace que la imagen se contenga dentro de su contenedor */
+      border-radius: 10px;
+      background-color: aqua;
+    }
+    .textoSeccion {
+      /* texto de la derecha */
+      width: 70%;
+      margin-left: 30px;
+      text-align: justify;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+  }
+
+  .contenedorTarjetas {
+    /* background-color: violet; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .tarjeta {
+      /* width: 70%; */
+      width: 40%;
+      margin: 10px 10px;
+      /* background-color: blanchedalmond; */
+      .imgtarjeta {
+        width: 100%;
+        object-fit: cover; /* hace que la imagen se contenga dentro de su contenedor */
+        border-radius: 10px;
+        background-color: aqua;
+      }
+      .btnTarjeta {
+        width: 50%;
+        background-color: #199319;
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .contenidoContacto {
+    margin: 30px 30px;
+    .formularioContacto {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .inputContacto {
+        width: 48%;
+        margin-bottom: 20px;
+      }
+      .textareaContacto {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .btnContacto {
+        width: 100%;
+        background-color: #199319;
+        color: white;
+        padding: 5px 15px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  height: 100px;
+  .socialIcons {
+    text-align: center;
+    font-size: 24px;
+    .fa-whatsapp {
+      color: rgb(0, 128, 49);
+    }
+    .fa-square-instagram {
+      color: blue;
+    }
+    .fa-facebook {
+      color: blue;
+    }
+    .fa-youtube {
+      color: red;
+    }
+  }
+}
