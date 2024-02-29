@@ -5,81 +5,6 @@
   padding: 0;
 }
 
-header {
-  margin: 30px 30px;
-  height: 100px;
-  .logo {
-    float: left;
-    width: 100px;
-    height: 100px;
-  }
-  .listaNav {
-    list-style: none;
-    text-align: right;
-    font-size: 1.3rem;
-    .listaItem {
-      display: inline-block;
-      margin-left: 10px;
-      .linkNav {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-h2 {
-  font-size: 2rem;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-p {
-  font-size: 1.5rem;
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-ul {
-  font-size: 1.3rem;
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-span {
-  font-size: 1.5rem;
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
-strong {
-  font-size: 1.5rem;
-  text-align: justify;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
-
 label {
   font-size: 1.5rem;
   text-align: justify;
@@ -101,7 +26,7 @@ main {
     background-size: cover;
     background-position: 0%;
 
-    height: 40vh;
+    height: 30vh;
     text-align: center;
     color: white;
   }

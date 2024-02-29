@@ -1,163 +1,225 @@
 <!DOCTYPE html>
-<!-- Esta es una etiqueta abierta-->
-<!-- Esto es un comentario-->
 <html lang="en">
-  <!-- Esta es una etiqueta cerrada -->
   <head>
-    <!-- Esta es la cabeza de todas las configuraciones del sitio web-->
     <meta charset="UTF-8" />
-    <!-- chartset es un atributo,c aracteres especiales del idioma espanol-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Responsive mobile-->
-    <title>Adoptame - Adopta una Mascota -</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/4eb7347ac3.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Adoptame - Adopta una Mascota -</title>
   </head>
   <body>
-    <!-- Header -->
+    <!-- Section navegation-->
     <header>
-      <nav class="navegation-bar">
-        <img
-          class="logo"
-          src="./assets/img/Adptame.jpg"
-          alt="Logo de Adoptame"
-        />
-        <ul class="listaNav">
-          <li class="listaItem">
-            <a class="linkNav" href="#">Inicio</a>
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="./pages/adopciones.html">Adopciones</a>
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="./pages/como-ayudar.html">Como Ayudar</a>
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="./pages/historias.html"
-              >Historias de exito</a
-            >
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="./pages/contacto.html">Contacto</a>
-          </li>
-          <a href=""></a>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="img-fluid logo justify-content-start w-25 h-25"
+              src="./assets/img/Adptame.jpg"
+              alt="Logo de Adoptame"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/adopciones.html"
+                  >Adopciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/como-ayudar.html"
+                  >Como ayudar</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/historias.html"
+                  >Historias de Exito</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <!-- Fin de Header -->
-    <!-- Inicio del Main  -->
     <main>
-      <section class="imagenFondo imagenFondoMainIndex">
+      <section class="imagenFondo imagenFondoMainIndex img-fluid">
         <section>
           <h1>Bienvenidos al albergue perruno</h1>
           <h2>Salvando vidas, una pata a la vez</h2>
         </section>
       </section>
-      <!-- <img class="fotoIzq" src="./assets/img/FotoQuienesSomos.JPG" alt="" /> -->
-      <article>
-        <h2>¿Quiénes Somos?</h2>
-        <p>
-          Somos un albergue dedicado a proporcionar un hogar temporal a perros
-          necesitados en situaciones criticas. Nuestra misión es encontrar
-          hogares amorosos y permanentes para cada uno de ellos. Rescatamos
-          muchos perros cada año en Guadalajara, y nuestro objetivo es
-          proporcionar un proceso de adopción rápido para que podamos salir y
-          salvar más vidas. Estamos dedicados a luchar contra la crueldad hacia
-          los animales y creemos que ningún animal de compañía debe ser
-          abandonado, maltratado o sacrificado.
-        </p>
-      </article>
-      <section class="seccionImgTexto">
-        <img
-          class="imgSeccion"
-          src="./assets/img/PerritoEncerrado.JPG"
-          alt=""
-        />
-        <article class="textoSeccion">
-          <h2>¿Por Qué Adoptar?</h2>
-          <p>
-            La adopción de un perro no solo cambia la vida del perro, sino
-            también la tuya. Descubre las razones para adoptar en lugar de
-            comprar:
-          </p>
-          <br />
-          <ul>
-            <li>
-              Por su amor incondicional por el propietario y demás miembros de
-              la familia.
-            </li>
-            <li>
-              Porque no juzgan ni la personalidad ni el aspecto de las personas.
-            </li>
-            <li>
-              Porque son compañeros fieles y pueden convertirse en nuestros
-              mejores amigos.
-            </li>
-            <li>Porque son muy bonitos.</li>
-            <li>
-              Porque siempre están contentos y nos contagian su buen humor.
-            </li>
-            <li>
-              Porque mejoran la autoestima de sus propietarios, especialmente en
-              el caso de los niños y de las personas que viven solas.
-            </li>
-            <li>Porque son juguetones y divertidos.</li>
-            <li>
-              Porque al acariciar y abrazar a una mascota, se reduce el nivel de
-              estrés.
-            </li>
-          </ul>
-        </article>
+      <!-- Container + Row + Col -->
+      <section class="container my-3">
+        <div class="row">
+          <!-- breakpoint | 12 columnas-->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2 class="text-center text-white bg-secondary bg-gradient">
+              ¿Quiénes Somos?
+            </h2>
+            <p>
+              Somos un albergue dedicado a proporcionar un hogar temporal a
+              perros necesitados en situaciones criticas. Nuestra misión es
+              encontrar hogares amorosos y permanentes para cada uno de ellos.
+              Rescatamos muchos perros cada año en Guadalajara, y nuestro
+              objetivo es proporcionar un proceso de adopción rápido para que
+              podamos salir y salvar más vidas. Estamos dedicados a luchar
+              contra la crueldad hacia los animales y creemos que ningún animal
+              de compañía debe ser abandonado, maltratado o sacrificado.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+            <img
+              src="./assets/img/FotoQuienesSomos.JPG"
+              class="img-thumbnail"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row border-top border-3 pt-2">
+          <!-- breakpoint | 12 columnas-->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2 class="text-center text-white bg-secondary bg-gradient">
+              ¿Por Qué Adoptar?
+            </h2>
+            <p>
+              La adopción de un perro no solo cambia la vida del perro, sino
+              también la tuya. Descubre las razones para adoptar en lugar de
+              comprar:
+            </p>
+            <ul>
+              <li>
+                Por su amor incondicional por el propietario y demás miembros de
+                la familia.
+              </li>
+              <li>
+                Porque no juzgan ni la personalidad ni el aspecto de las
+                personas.
+              </li>
+              <li>
+                Porque son compañeros fieles y pueden convertirse en nuestros
+                mejores amigos.
+              </li>
+              <li>Porque son muy bonitos.</li>
+              <li>
+                Porque siempre están contentos y nos contagian su buen humor.
+              </li>
+              <li>
+                Porque mejoran la autoestima de sus propietarios, especialmente
+                en el caso de los niños y de las personas que viven solas.
+              </li>
+              <li>Porque son juguetones y divertidos.</li>
+              <li>
+                Porque al acariciar y abrazar a una mascota, se reduce el nivel
+                de estrés.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+            <img
+              src="./assets/img/PerritoEncerrado.JPG"
+              class="img-thumbnail"
+              alt=""
+            />
+          </div>
+        </div>
       </section>
-      <article>
-        <h2>Últimas Noticias</h2>
-        <h3>
-          ¡Hemos rescatado a nuevos amigos! Conoce a nuestros perros más
-          recientes que están esperando un hogar.
+      <section class="container mt-3 border-top border-3 py-3">
+        <h2 class="text-center text-white bg-secondary bg-gradient">
+          Últimas Noticias
+        </h2>
+        <h3 class="text-center text-secondary">
+          ¡Hemos rescatado a nuevos amigos!
         </h3>
-      </article>
-      <section class="contenedorTarjetas">
-        <section class="tarjeta">
-          <img
-            class="imgtarjeta"
-            src="./assets/img/rescate1.jpg"
-            alt="rescate1"
-          />
-          <h3>Paul</h3>
-          <p>
-            Tenía hambre, estaba asustado, desnutrido y sucio. Paul era un
-            cachorro que llevaba tiempo en la calle y que tenía tantos miedos
-            como parásitos. Vivía sin hogar pero gracias a una salchicha y a su
-            rescatista, ahora no vaga por las calles.
-          </p>
-        </section>
-        <section class="tarjeta">
-          <img
-            class="imgtarjeta"
-            src="./assets/img/rescate2.jpg"
-            alt="rescate2"
-          />
-          <h3>Lucero</h3>
-          <p>
-            Otra perrita que fue marcada por la indiferencia, fue rescatada por
-            un grupo de cuidados para perros en una situación algo triste ya que
-            no podía caminar por una lesión en su columna y cadera.
-          </p>
-        </section>
+        <h3 class="text-center text-secondary">
+          Conoce a nuestros perros más recientes que están esperando un hogar.
+        </h3>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card" style="width: 28rem; height: 30rem">
+              <img
+                src="./assets/img/rescate1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5
+                  class="card-title text-white text-center bg-primary bg-gradient"
+                >
+                  Paul
+                </h5>
+                <p class="card-text">
+                  Tenía hambre, estaba asustado, desnutrido y sucio. Paul era un
+                  cachorro que llevaba tiempo en la calle y que tenía tantos
+                  miedos como parásitos. Vivía sin hogar pero gracias a una
+                  salchicha y a su rescatista, ahora no vaga por las calles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card" style="width: 28rem; height: 30rem">
+              <img
+                src="./assets/img/rescate2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5
+                  class="class=card-title text-white text-center bg-primary bg-gradient"
+                >
+                  Lucero
+                </h5>
+                <p class="card-text">
+                  Otra perrita que fue marcada por la indiferencia, fue
+                  rescatada por un grupo de cuidados para perros en una
+                  situación algo triste ya que no podía caminar por una lesión
+                  en su columna y cadera.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <!-- Fin del Main -->
-    <!-- Inicio del Footer -->
-    <footer>
-      <section>
-        <h2>2024 Albergue Perruno</h2>
-        <h3>Conocenos en nuestras redes sociales</h3>
-      </section>
+    <footer class="w-100">
+      <h2 class="text-center">2024 Albergue Perruno</h2>
+      <h3 class="text-center">Conocenos en nuestras redes sociales</h3>
       <div class="socialIcons">
         <a href="https://www.whatsup.com/" target="_blank">
           <i class="fa-brands fa-whatsapp"></i>
@@ -173,6 +235,11 @@
         </a>
       </div>
     </footer>
-    <!-- Fin del footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
