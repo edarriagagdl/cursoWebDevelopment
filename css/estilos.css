@@ -25,10 +25,11 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0%;
-
+    background-color: aqua;
     height: 30vh;
     text-align: center;
     color: white;
+    margin-top: 5rem;
   }
   /* background-color: aqua; */
   .imagenFondoMainIndex {
