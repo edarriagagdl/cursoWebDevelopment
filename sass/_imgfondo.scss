@@ -1,0 +1,41 @@
+@use 'sass:map';
+$imagenes-fondo: (
+  'index': '../assets/img/fotoManoPata.JPG',
+  'adopciones': '../assets/img/adoptame-letrero.webp',
+  'ayudar': '../assets/img/FotoAyudaAlbergue.jpg',
+  'historias': '../assets/img/Adopcion-MAxi.jpg',
+  'contacto': '../assets/img/perro-pata.png',
+);
+
+@mixin imagen-fondo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 30vh;
+  text-align: center;
+  color: $light;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+}
+
+/* background-color: aqua; */
+.imagenFondoMainIndex {
+  @include imagen-fondo;
+  background-image: url(map.get($imagenes-fondo, 'index'));
+}
+.imagenFondoAdopciones {
+  @include imagen-fondo;
+  background-image: url(map.get($imagenes-fondo, 'adopciones'));
+}
+.imagenFondoAyudar {
+  @include imagen-fondo;
+  background-image: url(map.get($imagenes-fondo, 'ayudar'));
+}
+.imagenFondoHistorias {
+  @include imagen-fondo;
+  background-image: url(map.get($imagenes-fondo, 'historias'));
+}
+.imagenFondoContacto {
+  @include imagen-fondo;
+  background-image: url(map.get($imagenes-fondo, 'contacto'));
+}

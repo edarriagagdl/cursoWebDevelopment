@@ -1,126 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 main {
-  .imagenFondo {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0%;
-    height: 30vh;
-    text-align: center;
-    color: white;
-    margin-top: 5rem;
-  }
-  /* background-color: aqua; */
-  .imagenFondoMainIndex {
-    background-image: url('../assets/img/fotoManoPata.JPG');
-  }
-  .imagenFondoAdopciones {
-    background-image: url('../assets/img/adoptame-letrero.webp');
-  }
-  .imagenFondoAyudar {
-    background-image: url('../assets/img/FotoAyudaAlbergue.jpg');
-  }
-  .imagenFondoHistorias {
-    background-image: url('../assets/img/Adopcion-MAxi.jpg');
-  }
-  .imagenFondoContacto {
-    background-image: url('../assets/img/perro-pata.png');
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #000;
+  background-color: #fff;
+  background: #eeeeee;
+  background: linear-gradient(181deg, #eeeeee 0%, #dcdcdc 15%, rgba(255, 190, 0, 0.08) 30%);
+  background: -moz-linear-gradient(181deg, #eeeeee 0%, #dcdcdc 15%, rgba(255, 190, 0, 0.08) 30%);
+}
 
-  .contenedorTarjetas {
-    /* background-color: violet; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
 
-    .tarjeta {
-      /* width: 70%; */
-      width: 40%;
-      margin: 10px 10px;
-      /* background-color: blanchedalmond; */
-      .imgtarjeta {
-        width: 100%;
-        object-fit: cover; /* hace que la imagen se contenga dentro de su contenedor */
-        border-radius: 10px;
-        background-color: aqua;
-      }
-      .btnTarjeta {
-        width: 50%;
-        background-color: #199319;
-        color: white;
-        padding: 5px 15px;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        margin: 10px auto;
-      }
-    }
-  }
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
 
-  .contenidoContacto {
-    margin: 30px 30px;
-    .formularioContacto {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      .inputContacto {
-        width: 48%;
-        margin-bottom: 20px;
-      }
-      .textareaContacto {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      .btnContacto {
-        width: 100%;
-        background-color: #199319;
-        color: white;
-        padding: 5px 15px;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        margin: 10px auto;
-      }
-    }
-  }
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
 
-  
-  .carusel-adopta {
-    max-width: 500px;
-    .carousel-inner {
-      .carousel-item {
-        img {
-          width: 100%;
-          height: 50vh;
-          object-fit: cover;
-        }
-      }
-    }
+ul {
+  list-style: circle;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.inicio {
+  margin: 30px 30px;
+}
+
+.numberedList {
+  list-style-type: decimal;
+}
+
+.carusel-adopta {
+  max-width: 500px;
+}
+.carusel-adopta .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carusel-adopta .carousel-inner .carousel-item ul {
+  list-style: none;
+}
+.carusel-adopta .carousel-inner .carousel-item ul li:before {
+  content: "✓ ";
+}
+
+/* background-color: aqua; */
+.imagenFondoMainIndex {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 30vh;
+  text-align: center;
+  color: #f8f9fa;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  background-image: url("../assets/img/fotoManoPata.JPG");
+}
+
+.imagenFondoAdopciones {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 30vh;
+  text-align: center;
+  color: #f8f9fa;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  background-image: url("../assets/img/adoptame-letrero.webp");
+}
+
+.imagenFondoAyudar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 30vh;
+  text-align: center;
+  color: #f8f9fa;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  background-image: url("../assets/img/FotoAyudaAlbergue.jpg");
+}
+
+.imagenFondoHistorias {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 30vh;
+  text-align: center;
+  color: #f8f9fa;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  background-image: url("../assets/img/Adopcion-MAxi.jpg");
+}
+
+.imagenFondoContacto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0%;
+  height: 30vh;
+  text-align: center;
+  color: #f8f9fa;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 5rem;
+  background-image: url("../assets/img/perro-pata.png");
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #343a40;
+  color: #f8f9fa;
   min-height: 100px;
-  .socialIcons {
-    text-align: center;
-    font-size: 24px;
-    .fa-whatsapp {
-      color: rgb(0, 128, 49);
-    }
-    .fa-square-instagram {
-      color: blue;
-    }
-    .fa-facebook {
-      color: blue;
-    }
-    .fa-youtube {
-      color: red;
-    }
-  }
 }
+footer .socialIcons {
+  text-align: center;
+  font-size: 24px;
+}
+footer .socialIcons .fa-whatsapp {
+  color: #28a745;
+}
+footer .socialIcons .fa-square-instagram {
+  color: #007bff;
+}
+footer .socialIcons .fa-facebook {
+  color: #007bff;
+}
+footer .socialIcons .fa-youtube {
+  color: #dc3545;
+}/*# sourceMappingURL=estilos.css.map */
