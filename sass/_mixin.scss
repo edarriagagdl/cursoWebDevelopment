@@ -1,0 +1,25 @@
+@mixin font-styling {
+  font-family: $font-family-sans-serif;
+  font-weight: $font-weight-light;
+  margin: 1rem 0;
+}
+
+@mixin redes($nombre) {
+  @if $nombre == 'whatsapp' {
+    .fa-whatsapp {
+      color: $green;
+    }
+  } @else if $nombre == 'instagram' {
+    .fa-square-instagram {
+      color: $blue;
+    }
+  } @else if $nombre == 'facebook' {
+    .fa-facebook {
+      color: $blue;
+    }
+  } @else if $nombre == 'youtube' {
+    .fa-youtube {
+      color: $red;
+    }
+  }
+}

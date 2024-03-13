@@ -7,7 +7,7 @@ $imagenes-fondo: (
   'contacto': '../assets/img/perro-pata.png',
 );
 
-@mixin imagen-fondo {
+.imagen-fondo {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0%;
@@ -20,22 +20,22 @@ $imagenes-fondo: (
 
 /* background-color: aqua; */
 .imagenFondoMainIndex {
-  @include imagen-fondo;
+  @extend .imagen-fondo;
   background-image: url(map.get($imagenes-fondo, 'index'));
 }
 .imagenFondoAdopciones {
-  @include imagen-fondo;
+  @extend .imagen-fondo;
   background-image: url(map.get($imagenes-fondo, 'adopciones'));
 }
 .imagenFondoAyudar {
-  @include imagen-fondo;
+  @extend .imagen-fondo;
   background-image: url(map.get($imagenes-fondo, 'ayudar'));
 }
 .imagenFondoHistorias {
-  @include imagen-fondo;
+  @extend .imagen-fondo;
   background-image: url(map.get($imagenes-fondo, 'historias'));
 }
 .imagenFondoContacto {
-  @include imagen-fondo;
+  @extend .imagen-fondo;
   background-image: url(map.get($imagenes-fondo, 'contacto'));
 }

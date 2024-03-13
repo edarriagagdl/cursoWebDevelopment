@@ -5,17 +5,9 @@ footer {
   .socialIcons {
     text-align: center;
     font-size: 24px;
-    .fa-whatsapp {
-      color: $success;
-    }
-    .fa-square-instagram {
-      color: $primary;
-    }
-    .fa-facebook {
-      color: $primary;
-    }
-    .fa-youtube {
-      color: $danger;
-    }
+    @include redes('whatsapp');
+    @include redes('instagram');
+    @include redes('facebook');
+    @include redes('youtube');
   }
 }
