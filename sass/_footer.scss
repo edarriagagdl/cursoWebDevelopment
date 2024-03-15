@@ -5,6 +5,12 @@ footer {
   .socialIcons {
     text-align: center;
     font-size: 24px;
+    .fa-brands {
+      animation-name: flotar;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: easy-in-out;
+    }
     @include redes('whatsapp');
     @include redes('instagram');
     @include redes('facebook');

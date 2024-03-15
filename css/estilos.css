@@ -71,6 +71,17 @@ ul {
   content: "✓ ";
 }
 
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .imagen-fondo, .imagenFondoContacto, .imagenFondoHistorias, .imagenFondoAyudar, .imagenFondoAdopciones, .imagenFondoMainIndex {
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,15 +123,25 @@ footer .socialIcons {
   text-align: center;
   font-size: 24px;
 }
+footer .socialIcons .fa-brands {
+  animation-name: flotar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: easy-in-out;
+}
 footer .socialIcons .fa-whatsapp {
   color: #28a745;
+  animation-delay: 1s;
 }
 footer .socialIcons .fa-square-instagram {
   color: #007bff;
+  animation-delay: 2s;
 }
 footer .socialIcons .fa-facebook {
   color: #007bff;
+  animation-delay: 3s;
 }
 footer .socialIcons .fa-youtube {
   color: #dc3545;
+  animation-delay: 4s;
 }/*# sourceMappingURL=estilos.css.map */
