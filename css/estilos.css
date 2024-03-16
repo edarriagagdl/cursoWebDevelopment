@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Estilos */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .navbar .navbar-brand img:hover::before {
   transform: scale(1.5);
   box-shadow: 0 0 25px #ffee10;
@@ -20,23 +20,33 @@
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 main {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 1rem 0;
   font-size: 1rem;
   color: #000;
   background-color: #fff;
   background: #eeeeee;
-  background: linear-gradient(to right, #eeeeee 0%, #f5f4bd 15%, rgba(255, 191, 0, 0.021) 30%);
-  background: -moz-linear-gradient(to right, #eeeeee 0%, #f5f4bd 15%, rgba(255, 190, 0, 0.08) 30%);
+  background: linear-gradient(
+    to right,
+    #eeeeee 0%,
+    #f5f4bd 15%,
+    rgba(255, 191, 0, 0.021) 30%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #eeeeee 0%,
+    #f5f4bd 15%,
+    rgba(255, 190, 0, 0.08) 30%
+  );
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 1rem 0;
   font-size: 1rem;
@@ -44,7 +54,7 @@ p {
 
 ul {
   list-style: circle;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   margin: 1rem 0;
   font-size: 1rem;
@@ -65,16 +75,21 @@ ul {
   width: 100%;
   height: 50vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .carusel-adopta .carousel-inner .carousel-item ul {
   list-style: none;
 }
 .carusel-adopta .carousel-inner .carousel-item ul li:before {
-  content: "✓ ";
+  content: '✓ ';
 }
 
-.imagen-fondo, .imagenFondoContacto, .imagenFondoHistorias, .imagenFondoAyudar, .imagenFondoAdopciones, .imagenFondoMainIndex {
+.imagen-fondo,
+.imagenFondoContacto,
+.imagenFondoHistorias,
+.imagenFondoAyudar,
+.imagenFondoAdopciones,
+.imagenFondoMainIndex {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0%;
@@ -84,36 +99,46 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.imagen-fondo .textoFondo, .imagenFondoContacto .textoFondo, .imagenFondoHistorias .textoFondo, .imagenFondoAyudar .textoFondo, .imagenFondoAdopciones .textoFondo, .imagenFondoMainIndex .textoFondo {
+.imagen-fondo .textoFondo,
+.imagenFondoContacto .textoFondo,
+.imagenFondoHistorias .textoFondo,
+.imagenFondoAyudar .textoFondo,
+.imagenFondoAdopciones .textoFondo,
+.imagenFondoMainIndex .textoFondo {
   text-align: center;
   color: #f8f9fa;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   background-color: hsla(210, 20%, 98%, 0.158);
   margin-top: 5rem;
 }
-.imagen-fondo .textoFondo h1, .imagenFondoContacto .textoFondo h1, .imagenFondoHistorias .textoFondo h1, .imagenFondoAyudar .textoFondo h1, .imagenFondoAdopciones .textoFondo h1, .imagenFondoMainIndex .textoFondo h1 {
+.imagen-fondo .textoFondo h1,
+.imagenFondoContacto .textoFondo h1,
+.imagenFondoHistorias .textoFondo h1,
+.imagenFondoAyudar .textoFondo h1,
+.imagenFondoAdopciones .textoFondo h1,
+.imagenFondoMainIndex .textoFondo h1 {
   font-weight: bold;
 }
 
 /* background-color: aqua; */
 .imagenFondoMainIndex {
-  background-image: url("../assets/img/fotoManoPata.JPG");
+  background-image: url('../assets/img/fotoManoPata.JPG');
 }
 
 .imagenFondoAdopciones {
-  background-image: url("../assets/img/adoptame-letrero.webp");
+  background-image: url('../assets/img/adoptame-letrero.webp');
 }
 
 .imagenFondoAyudar {
-  background-image: url("../assets/img/FotoAyudaAlbergue.jpg");
+  background-image: url('../assets/img/FotoAyudaAlbergue.jpg');
 }
 
 .imagenFondoHistorias {
-  background-image: url("../assets/img/Adopcion-MAxi.jpg");
+  background-image: url('../assets/img/Adopcion-MAxi.jpg');
 }
 
 .imagenFondoContacto {
-  background-image: url("../assets/img/perro-pata.png");
+  background-image: url('../assets/img/perro-pata.png');
 }
 
 @keyframes flotar {
@@ -157,4 +182,4 @@ footer .socialIcons .fa-facebook {
 footer .socialIcons .fa-youtube {
   color: #dc3545;
   animation-delay: 4s;
-}/*# sourceMappingURL=estilos.css.map */
+} /*# sourceMappingURL=estilos.css.map */
