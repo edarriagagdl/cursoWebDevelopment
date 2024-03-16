@@ -12,31 +12,21 @@ main {
   background: linear-gradient(
     181deg,
     #eeeeee 0%,
-    #dcdcdc 15%,
+    #f5f4bd 15%,
     rgba(255, 190, 0, 0.08) 30%
   );
   background: -webkit-linear-gradient(
     181deg,
     #eeeeee 0%,
-    #dcdcdc 15%,
+    #f5f4bd 15%,
     rgba(255, 190, 0, 0.08) 30%
   );
   background: -moz-linear-gradient(
     181deg,
     #eeeeee 0%,
-    #dcdcdc 15%,
+    #f5f4bd 15%,
     rgba(255, 190, 0, 0.08) 30%
   );
-}
-
-h1 {
-  @include font-styling;
-  font-size: 3rem;
-}
-
-h2 {
-  @include font-styling;
-  font-size: 2rem;
 }
 
 p {
