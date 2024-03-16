@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  padding-top: 100px;
+}
+
 main {
   @include font-styling;
   font-size: 1rem;
@@ -10,19 +14,19 @@ main {
   background-color: $white;
   background: #eeeeee;
   background: linear-gradient(
-    181deg,
+    to right,
     #eeeeee 0%,
     #f5f4bd 15%,
-    rgba(255, 190, 0, 0.08) 30%
+    rgba(255, 191, 0, 0.021) 30%
   );
   background: -webkit-linear-gradient(
-    181deg,
+    to right,
     #eeeeee 0%,
     #f5f4bd 15%,
     rgba(255, 190, 0, 0.08) 30%
   );
   background: -moz-linear-gradient(
-    181deg,
+    to right,
     #eeeeee 0%,
     #f5f4bd 15%,
     rgba(255, 190, 0, 0.08) 30%
@@ -64,17 +68,5 @@ ul {
         content: '✓ ';
       }
     }
-  }
-}
-
-@keyframes flotar {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }

@@ -1,9 +1,26 @@
 @charset "UTF-8";
 /* Estilos */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+.navbar .navbar-brand img:hover::before {
+  transform: scale(1.5);
+  box-shadow: 0 0 25px #ffee10;
+}
+.navbar .navbar-brand img:hover {
+  color: #ffee10;
+  box-shadow: 0 0 35px #ffee10;
+  text-shadow: 0 0 35px #ffee10;
+}
+.navbar .navbar-brand img {
+  border-radius: 50%;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  padding-top: 100px;
 }
 
 main {
@@ -14,8 +31,8 @@ main {
   color: #000;
   background-color: #fff;
   background: #eeeeee;
-  background: linear-gradient(181deg, #eeeeee 0%, #f5f4bd 15%, rgba(255, 190, 0, 0.08) 30%);
-  background: -moz-linear-gradient(181deg, #eeeeee 0%, #f5f4bd 15%, rgba(255, 190, 0, 0.08) 30%);
+  background: linear-gradient(to right, #eeeeee 0%, #f5f4bd 15%, rgba(255, 191, 0, 0.021) 30%);
+  background: -moz-linear-gradient(to right, #eeeeee 0%, #f5f4bd 15%, rgba(255, 190, 0, 0.08) 30%);
 }
 
 p {
@@ -57,17 +74,6 @@ ul {
   content: "✓ ";
 }
 
-@keyframes flotar {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .imagen-fondo, .imagenFondoContacto, .imagenFondoHistorias, .imagenFondoAyudar, .imagenFondoAdopciones, .imagenFondoMainIndex {
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,6 +116,17 @@ ul {
   background-image: url("../assets/img/perro-pata.png");
 }
 
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 footer {
   background-color: #000000;
   color: #f8f9fa;
