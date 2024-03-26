@@ -52,21 +52,40 @@ ul {
   list-style-type: decimal;
 }
 
-.carusel-adopta {
-  max-width: 500px;
-  .carousel-inner {
-    .carousel-item {
-      img {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-      }
-      ul {
-        list-style: none;
-      }
-      ul li:before {
-        content: '✓ ';
-      }
+.img-thumbnail:hover img {
+  transform: scale(2);
+  transition: all 0.2s linear;
+}
+
+.card {
+  .img-adopcion {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+  }
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40vh;
+  }
+  .card-body {
+    background-color: $white;
+    color: $black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    h5 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1rem;
+    }
+    ul {
+      list-style: none;
+    }
+    ul li:before {
+      content: '✓ ';
     }
   }
 }
