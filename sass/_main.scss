@@ -38,7 +38,14 @@ p {
   font-size: 1rem;
 }
 
-ul {
+h2 {
+  @include font-styling;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ul-porque-adoptar {
   list-style: circle;
   @include font-styling;
   font-size: 1rem;
@@ -66,7 +73,8 @@ ul {
   .card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 40vh;
+    height: 25vh;
+    object-fit: cover;
   }
   .card-body {
     background-color: $white;
@@ -86,6 +94,19 @@ ul {
     }
     ul li:before {
       content: '✓ ';
+    }
+  }
+}
+
+.img-container {
+  overflow: hidden;
+  .img-historias {
+    display: block;
+    transition: transform 0.2s; /* Animation */
+    margin: 0 auto;
+    &:hover {
+      transform: scale(1.3);
+      transform-origin: 50% 50%;
     }
   }
 }

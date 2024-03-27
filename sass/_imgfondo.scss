@@ -20,7 +20,7 @@ $imagenes-fondo: (
     text-align: center;
     color: $light;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    background-color: $link-color;
+    // background-color: $link-color;
     margin-top: 5rem;
     h1 {
       font-weight: bold;
@@ -31,21 +31,26 @@ $imagenes-fondo: (
 /* background-color: aqua; */
 .imagenFondoMainIndex {
   @extend .imagen-fondo;
-  background-image: url(map.get($imagenes-fondo, 'index'));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(map.get($imagenes-fondo, 'index'));
 }
 .imagenFondoAdopciones {
   @extend .imagen-fondo;
-  background-image: url(map.get($imagenes-fondo, 'adopciones'));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(map.get($imagenes-fondo, 'adopciones'));
 }
 .imagenFondoAyudar {
   @extend .imagen-fondo;
-  background-image: url(map.get($imagenes-fondo, 'ayudar'));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(map.get($imagenes-fondo, 'ayudar'));
 }
 .imagenFondoHistorias {
   @extend .imagen-fondo;
-  background-image: url(map.get($imagenes-fondo, 'historias'));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(map.get($imagenes-fondo, 'historias'));
 }
 .imagenFondoContacto {
   @extend .imagen-fondo;
-  background-image: url(map.get($imagenes-fondo, 'contacto'));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(map.get($imagenes-fondo, 'contacto'));
 }
