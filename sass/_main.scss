@@ -3,10 +3,6 @@
   padding: 0;
 }
 
-body {
-  padding-top: 100px;
-}
-
 main {
   @include font-styling;
   font-size: 1rem;
@@ -45,6 +41,10 @@ h2 {
   text-align: center;
 }
 
+.logo-adoptame {
+  width: 50px;
+  height: 50px;
+}
 .ul-porque-adoptar {
   list-style: circle;
   @include font-styling;
