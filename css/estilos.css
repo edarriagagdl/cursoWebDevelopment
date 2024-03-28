@@ -310,7 +310,7 @@ footer .socialIcons .fa-youtube {
 .paw-print-6 {
   opacity: 0;
   position: absolute;
-  left: 850px;
+  left: 875px;
   top: 130px;
   transform: rotate(10deg);
   animation: walk 3s linear infinite 1.25s;
@@ -329,7 +329,7 @@ footer .socialIcons .fa-youtube {
   opacity: 0;
   position: absolute;
   left: 1150px;
-  top: 250px;
+  top: 150px;
   transform: rotate(10deg);
   animation: walk 3s linear infinite 1.75s;
 }
