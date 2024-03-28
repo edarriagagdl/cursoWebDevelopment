@@ -118,10 +118,15 @@ h2 {
 }
 
 .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .img-container .img-historias {
-  display: block;
+  max-height: 300px;
+  max-width: 300px;
+  width: auto;
   transition: transform 0.2s; /* Animation */
   margin: 0 auto;
 }
@@ -212,4 +217,131 @@ footer .socialIcons .fa-facebook {
 footer .socialIcons .fa-youtube {
   color: #dc3545;
   animation-delay: 4s;
+}
+
+.pad {
+  width: 25px;
+  height: 27px;
+  background-color: #ffffff;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  display: block;
+  position: absolute;
+}
+
+.large {
+  width: 70px;
+  height: 80px;
+  transform: rotate(80deg);
+  left: 100px;
+  top: 50px;
+}
+
+.small-1 {
+  transform: rotate(50deg);
+  left: 145px;
+  top: 28px;
+}
+
+.small-2 {
+  transform: rotate(65deg);
+  left: 174px;
+  top: 50px;
+}
+
+.small-3 {
+  transform: rotate(98deg);
+  position: absolute;
+  left: 178px;
+  top: 87px;
+}
+
+.small-4 {
+  transform: rotate(140deg);
+  position: absolute;
+  left: 158px;
+  top: 117px;
+}
+
+.paw-print-1 {
+  opacity: 0;
+  position: absolute;
+  left: 75px;
+  top: 200px;
+  transform: rotate(-40deg);
+  animation: walk 3s linear infinite;
+}
+
+.paw-print-2 {
+  opacity: 0;
+  position: absolute;
+  left: 275px;
+  top: 180px;
+  transform: rotate(-5deg);
+  animation: walk 3s linear infinite 0.25s;
+}
+
+.paw-print-3 {
+  opacity: 0;
+  position: absolute;
+  left: 425px;
+  top: 130px;
+  transform: rotate(-10deg);
+  animation: walk 3s linear infinite 0.5s;
+}
+
+.paw-print-4 {
+  opacity: 0;
+  position: absolute;
+  left: 575px;
+  top: 200px;
+  transform: rotate(-20deg);
+  animation: walk 3s linear infinite 0.75s;
+}
+
+.paw-print-5 {
+  opacity: 0;
+  position: absolute;
+  left: 725px;
+  top: 50px;
+  transform: rotate(10deg);
+  animation: walk 3s linear infinite 1s;
+}
+
+.paw-print-6 {
+  opacity: 0;
+  position: absolute;
+  left: 850px;
+  top: 130px;
+  transform: rotate(10deg);
+  animation: walk 3s linear infinite 1.25s;
+}
+
+.paw-print-7 {
+  opacity: 0;
+  position: absolute;
+  left: 1075px;
+  top: 50px;
+  transform: rotate(20deg);
+  animation: walk 3s linear infinite 1.5s;
+}
+
+.paw-print-8 {
+  opacity: 0;
+  position: absolute;
+  left: 1150px;
+  top: 250px;
+  transform: rotate(10deg);
+  animation: walk 3s linear infinite 1.75s;
+}
+
+/* walking effect animation keyframes */
+@keyframes walk {
+  /* appear */
+  25% {
+    opacity: 0.25;
+  }
+  /* disappear */
+  100% {
+    opacity: 0;
+  }
 }/*# sourceMappingURL=estilos.css.map */

@@ -99,9 +99,14 @@ h2 {
 }
 
 .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   .img-historias {
-    display: block;
+    max-height: 300px;
+    max-width: 300px;
+    width: auto;
     transition: transform 0.2s; /* Animation */
     margin: 0 auto;
     &:hover {
